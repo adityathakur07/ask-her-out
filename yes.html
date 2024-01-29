@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./yes_style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">yehh finally!!</h1>
+                <h2 class = "header_text">Hurrayyyy!!</h1>
+            </div>
+            <div class="gif_container">
+                <img src="tenor (1).gif" alt="Cute animated illustration">
+            </div>
+        </div>
+        <div id="calendar">
+            <h2>Select a Date</h2>
+            <input type="date" id="datePicker">
+            <button onclick="confirmDate()">Confirm Date</button>
+        </div>
+    
+        <script>
+            function respond(response) {
+                if (response === 'yes') {
+                    document.getElementById('celebration').style.display = 'block';
+                }
+            }
+    
+            function showCalendar() {
+                document.getElementById('calendar').style.display = 'block';
+            }
+    
+            function confirmDate() {
+                var selectedDate = document.getElementById('datePicker').value;
+                alert("Great! Our date is set for " + selectedDate + "!");
+                // You can add more functionality here, like sending the date to a server or storing it locally.
+            }
+        </script>
+    </body>
+    </html>
+       
+    </body> 
+</html>
